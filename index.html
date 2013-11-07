@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
+	<script src="jquery.string-canvas.js"></script>
+	<script>
+
+		
+	$(document).ready(function(){
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.font="30px Arial";
+ctx.fillText("Hello World",10,50);
+/*$('#myCanvas').customText({
+			text : 'Marco'
+		});*/
+	
+	});
+	</script>
+
+</head>
+<body>
+	<div style="text-align:center;">
+		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+	</div>
+<body>
+</html>
