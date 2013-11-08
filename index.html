@@ -4,26 +4,37 @@
 	<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.1.0.min.js"></script>
 	<script src="jquery.string-canvas.js"></script>
-	<script>
-
-		
-	$(document).ready(function(){
-var c=document.getElementById("myCanvas");
-var ctx=c.getContext("2d");
-ctx.font="30px Arial";
-ctx.fillText("Hello World",10,50);
-/*$('#myCanvas').customText({
-			text : 'Marco'
-		});*/
-	
-	});
-	</script>
-
+	<script src="functions.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
-	<div style="text-align:center;">
-		<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
+	<div>
+		<h2>
+			Term&oacute;metro I - JQuery plugin 
+		</h2>
+	</div>
+	<div>		
+		<canvas class="myCanvas">
+			Your browser does not support the HTML5 canvas tag.
+		</canvas>
+	</div>
+	<div>
+		<label>
+			Write your string:
+		</label>
+		<input type="text" id="inputString" />
+		<br>
+		<label>
+			Choose your font size:
+		</label>
+		<select id="fontSize">
+			<option value="20">20</option>
+			<option value="30">30</option>
+			<option value="40">40</option>
+			<option value="50">50</option>
+		</select>
+		<br>
+		<input type="button" id="sendString" value="Send">
 	</div>
 <body>
 </html>
